@@ -47,15 +47,15 @@ $calculator = new Calculator($integer1, $integer2, $operator);
 $result = $calculator->calculateresult();
 echo "Result: " . $result;
 //Q2
-$cars = array(0,3,6,9,12);
+$cars = array(0,3,6,9,12,300);
 $count;
 
  foreach ($cars as $cars) {
         if ($cars >= 300) {
-            return 0;
+            $count=0;
         }
         
-        if ($cars % 3 === 0) {
+        elseif ($cars % 3 === 0) {
             $count++;
         }
     }
