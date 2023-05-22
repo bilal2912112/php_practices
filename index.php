@@ -53,6 +53,7 @@ $count;
  foreach ($cars as $cars) {
         if ($cars >= 300) {
             $count=0;
+            break;
         }
         
         elseif ($cars % 3 === 0) {
